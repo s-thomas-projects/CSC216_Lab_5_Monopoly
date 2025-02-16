@@ -46,16 +46,6 @@ class CircularlyLinkedList
         tail = tail->next;
     }
 
-    void pop_front()
-    {
-        Node* head = tail->next;
-        if (head == tail)
-            tail = nullptr;
-        else
-            tail->next = head->next;
-        delete head;
-        sz--;
-    }
 
     void step()
     {
